@@ -1,2 +1,2 @@
 # woo-plugin-boilerplate
-Заготовка для woo плагина
+simple woo boilerplate with Netbeans project

@@ -2,7 +2,7 @@
 /*
  * Plugin Name:       az-woo-plugin-boilerplate
  * Plugin URI:        https://github.com/samprodam/woo-plugin-boilerplate
- * Description:       Заготовка для плагина woo.
+ * Description:       simple woo boilerplate.
  * Version:           0.0.1
  * Requires at least: 6.5
  * Requires PHP:      7.2
@@ -20,24 +20,22 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-//Проверка и инициализация
+//initial
 add_action( 'plugins_loaded', 'azwpb_init' );
 function azwpb_init() {
 
-	/* подключение файлов*/
-        define( 'AZWPB_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
-        define( 'AZWPB_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+    define('AZWPB_PLUGIN_PATH', plugin_dir_path(__FILE__));
+    define('AZWPB_PLUGIN_URL', plugin_dir_url(__FILE__));
 
-        /* Подключение файлов фронтенда и бэкенда */
-        if ( is_admin() ){
+    if ( is_admin() ) {
 
-            require_once( 'backend/admin.php' );
+        require_once( 'backend/admin.php' );
+        
+    } else {
 
-        } else {
-
-            require_once( 'frontend/front-functions.php' );
-            require_once( 'frontend/front-hooks.php' );
-
-        }
-
+        require_once( 'frontend/front-functions.php' );
+        require_once( 'frontend/front-hooks.php' );
+        
+    }
+    
 }

@@ -1,5 +1,5 @@
 <?php
-/* FRONTEND AREA*/
+/* FRONT FUNCTIONS */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
