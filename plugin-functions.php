@@ -1,4 +1,5 @@
 <?php
-/* ADMIN AREA*/
+/* PLUGIN GLOBAL FUNCTIONS */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
+

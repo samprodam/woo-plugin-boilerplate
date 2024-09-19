@@ -26,16 +26,18 @@ function azwpb_init() {
 
     define('AZWPB_PLUGIN_PATH', plugin_dir_path(__FILE__));
     define('AZWPB_PLUGIN_URL', plugin_dir_url(__FILE__));
+    
+    require_once AZWPB_PLUGIN_PATH . 'plugin-functions.php';
 
     if ( is_admin() ) {
 
-        require_once( 'backend/admin.php' );
+        require_once AZWPB_PLUGIN_PATH . 'backend/admin.php';
         
     } else {
 
-        require_once( 'frontend/front-functions.php' );
-        require_once( 'frontend/front-hooks.php' );
+        require_once AZWPB_PLUGIN_PATH . 'frontend/front-functions.php';
+        require_once AZWPB_PLUGIN_PATH . 'frontend/front-hooks.php';
         
     }
-    
+  
 }

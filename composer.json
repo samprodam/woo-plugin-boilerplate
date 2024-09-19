@@ -1,0 +1,16 @@
+{
+    "name": "vendor/az-woo-boilerplate",
+    "description": "Description of project az-woo-boilerplate.",
+    "authors": [
+        {
+            "name": "jvj",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {},
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
